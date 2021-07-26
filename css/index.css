@@ -1,0 +1,450 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;}
+a , img { 
+	display: block; 	
+}
+p a{ 
+	display: inline; 
+}
+a{
+	text-decoration: none;
+	transition:all .2s ease;
+	color:#282828;
+}
+li{
+	 list-style-type: none;  
+}
+.clear{ 
+	clear: both; 
+}
+
+body{
+	
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+}
+header{
+	width:15%;
+	height: 100%;
+	background-color: white;
+	position: fixed;
+	top:0;
+	left:0;
+}
+header div.fa{
+	width:10%;
+	text-align: center;
+	margin:8px 0 0;
+	display: none;
+}
+header h1{
+	width:100%;
+	text-align: center;
+	margin:50px 0 60px;
+	font-size: 2em;
+	font-family: 'Domine', serif;	
+}
+header nav{
+	width:70%;
+	margin:0 auto 60px;
+}
+header nav li{
+	margin:30px 0;
+	text-align: left;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+header nav li a{
+	font-weight: bold;
+	font-size: .75em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+}
+header nav li a.this{
+	
+	flex-flow: row nowrap; 
+
+	color:grey;
+}
+header p{
+	width:70%;
+	margin:0 auto;
+	font-size:.8em;
+	line-height: 1.4em;
+	text-align: center;
+}
+header p a{
+	display: inline-block;
+	margin:20px 0 0;
+}
+
+main{
+	width:85%;
+	position: fixed;
+
+	height: 100%;
+
+	margin:0 0 0 300px;
+}
+.channel__name{
+	
+	height: 10%;
+	background-color: cadetblue;
+	
+	padding:0;
+}
+.alumni{
+	height: 80%;
+	background-color: aquamarine;
+	
+	padding:0;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.field{
+	height: 10%;
+	margin: 20px;
+	background-color: cornflowerblue;
+	border: solid black 2px;
+	border-radius: 10px;
+	
+}
+
+
+/* 
+section.slider .slide h2{
+	padding:30px 60px;
+	background: rgba(255,255,255,.9);
+	display: inline-block;
+	font-size: 4.2em;
+	font-family: 'Domine', serif;
+	
+	animation: moverTitulo .5s ease-out 0s 1 forwards;
+	position: relative;
+	top:100px;
+	opacity: 0;
+}
+section.slider .slide a{
+	margin:40px 0 0;
+	padding:20px 30px;
+	display: inline-block;
+	
+	font-size: 	.9em;
+	letter-spacing: 3px;
+
+	text-transform: uppercase;
+	border:1px solid white;
+	color:white;
+
+	animation: moverA .35s ease-in .3s 1 forwards;
+
+	position: relative;
+	top:100px;
+	opacity: 0;
+	
+}
+section.slider .slide a:hover{
+	background: white;
+	color:black;
+} */
+
+
+
+
+
+
+
+
+
+
+/* section.articulos{
+	width:90%;
+	padding:50px 0;
+	margin:0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+section.articulos article{
+	width:30%;
+}
+section.articulos article img{
+	width:100%;
+}
+section.articulos article h2{
+	text-align: center;
+	margin:20px 0 30px;
+	font-family: 'Domine', serif;
+	font-size: 1.2em;
+}
+section.articulos article p{
+	text-align: center;
+	font-weight: lighter;
+	font-size: .9em;
+}
+section.stars .info{
+	width:40%;
+}
+section.stars{
+	background:#f7f7f7;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align:right;
+}
+section.stars h3{
+	width:100%;
+	margin: 0 0 10px;
+	font-family: 'Domine';
+	font-weight: 300;
+	font-size: 3.5em;
+}
+section.stars h4{
+	width:100%;
+	margin: 0 0 30px;
+	font-size: 1em;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	color:#c7c7c7;
+}
+section.stars div.star{
+	width:100%;
+}
+section.stars div.star i.fa{
+	font-size: 1.6em;
+}
+section.stars p{
+	width:50%;
+	text-align: left;
+	margin:0 5%;
+	font-size: .9em;
+	line-height: 2em;
+	color:grey;
+}
+
+
+section.carrousel {
+	overflow: hidden;
+}
+section.carrousel div.grande{
+	width:150%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+section.carrousel div.grande a{
+	width:16.7%;
+}
+section.carrousel div.grande a:hover{
+	opacity: .8
+}
+section.carrousel div.grande a img{
+	width:100%;
+}
+
+section.iconos{
+	width:80%;
+	margin:0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+section.iconos article{
+	width:25%;
+	background-image: red;
+	margin:1% 1%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+section.iconos article img{
+	width:60px;
+	height: auto;
+}
+section.iconos article .info{
+	width:calc( 90% - 60px );
+	margin:0 0 0 10%;
+}
+section.iconos article .info h2{
+	margin: 0 0 20px;
+	font-family: 'Domine';
+	font-size: 1em;
+}
+section.iconos article .info p{
+	color:grey;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#preload{
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background:white;
+	top:0;
+	left:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	display: none;
+} */
+
+
+
+@media (max-width:900px){
+	header{
+		width:100%;
+		height: auto;
+		padding:20px 0 10px;
+		z-index: 1;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	header div.fa{
+		display: block;
+	}
+	header h1{
+		width:80%;
+		margin: 0px 0 20px;
+		font-size: 3em;
+	}
+	
+	header.abierto nav{
+		display: block;
+	}
+	header nav{
+		width:100%;
+		background: white;
+		padding: 0 0 20px;
+		display: none;
+	}
+	header nav li{
+		width:80%;
+		margin:5px auto;
+		padding:5px 0;
+		border-bottom:1px solid rgba(0,0,0,0.1);
+	}
+	header nav li a{
+		text-transform: none;
+		text-align:left;
+		letter-spacing: 0;
+		font-weight: 300;
+	}
+	header p{
+		display: none;
+	}
+
+	div.content{
+		width:100%;
+		margin: 0;
+	}
+
+	section.stars {
+		flex-wrap: wrap;
+	}
+	section.stars div.info{
+		width:80%;
+		margin:0 auto;
+	}
+	section.stars p{
+		width:80%;
+		margin:0 auto;
+	}
+
+	section.iconos{
+		width:80%;
+	}
+	section.iconos article{
+		width:48%;
+		margin:3% 1%;
+	}
+	section.slider .grande{
+		animation: none;
+	}
+}
+
+
+@media (max-width: 768px){
+	
+	section.articulos{
+		flex-wrap: wrap;
+	}
+	section.articulos article{
+		width:100%;
+		margin:0 0 50px;
+	}
+
+}
+
+@keyframes moverTitulo{
+
+	from{
+		opacity: 0;
+		top:100px;
+	}
+	to{
+		opacity: 1;
+		top:0px;
+	}
+
+
+}
+
+@keyframes moverA{
+	0%{
+		opacity: 0;
+		top:50px;
+	}
+	100%{
+		opacity: 1;
+		top:0px;
+	}
+}
+
+
+
+
+@keyframes moverGrande{
+
+	0%{ 	left:0%;	}
+	
+	28%{ 	left:0%;	}
+	33%{ 	left:-100%;	}
+	
+	61%{ 	left:-100%;	}
+	66%{ 	left:-200%;	}
+
+	94%{ 	left:-200%;	}
+	100%{ 	left:0%;	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
