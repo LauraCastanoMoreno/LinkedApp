@@ -25,6 +25,7 @@ $('#bChannels').click(function(){
 
 $(document).on('click','.nameChannel',function(){
     textChannel=$(this).text();
+    $('.channel__input').show();
     $('#ch_input').attr('placeholder','Escribir mensaje en '+textChannel)
     $('#ssChannel').text(textChannel);
     $('#sContent').html('');
@@ -53,7 +54,12 @@ function showItem(pEntry,pNeedle=null){
 
 $('#logo').click(function(){
    $('#sContent').html('<img src="img/LinkedAppBackgroundW.png" alt="LinkedAppLogo"></img>');
+   $('.channel__input').hide();
 });
+
+$('#hamb').click(function(){
+    $('nav').toggle();
+})
 
 $('#bCreate').click(function(){
     var cnn=$('#iCreate').val();
@@ -131,3 +137,6 @@ $('#myModal').on('keypress',function(e) {
 });
 
 
+$(document).ready(function(){
+    $('.channel__input').hide();
+})
